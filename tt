@@ -1,0 +1,7 @@
+me._transferName = function(oldName){
+		var users = new Array();
+		users = oldName.split("@");
+		var domainPrefix = users[1].split(".")
+		newName = domainPrefix[0].toUpperCase() + "\\" + users[0];
+		return newName;
+	}
